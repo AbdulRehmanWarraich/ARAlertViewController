@@ -1,0 +1,16 @@
+PODS:
+  - ARAlertViewController (0.1.0)
+
+DEPENDENCIES:
+  - ARAlertViewController (from `../`)
+
+EXTERNAL SOURCES:
+  ARAlertViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ARAlertViewController: 0070a818869370834e36f4d2555f8140081353a2
+
+PODFILE CHECKSUM: 6f8de5bb3e8f9428905ca86eb14b10618075e50c
+
+COCOAPODS: 1.5.0

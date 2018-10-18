@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ARAlertViewController'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ARAlertViewController.'
+  s.version          = '1.0'
+  s.summary          = 'ARAlertViewController is a refactoring library for UIAlertViewController which allow you to user alert with ease.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,30 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ARAlertViewController is a basic wrapper for UIAlertViewController written in Swift. This help you to show alert messages and custom alert with ease and vert little effort and easy to manage.
                        DESC
 
-  s.homepage         = 'https://github.com/ar.warraich@outlook.com/ARAlertViewController'
+  s.homepage         = 'https://github.com/AbdulRehmanWarraich'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ar.warraich@outlook.com' => 'abdul.rehman@evampsaanga.com' }
-  s.source           = { :git => 'https://github.com/ar.warraich@outlook.com/ARAlertViewController.git', :tag => s.version.to_s }
+  s.author           = { 'AbdulRehman Warraich' => 'ar.warraich@outlook.com' }
+  s.source           = { :git => 'https://github.com/AbdulRehmanWarraich/ARAlertViewController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.2'
 
   s.source_files = 'ARAlertViewController/Classes/**/*'
   
+  # s.resources = "ARAlertViewController/*.xib"
   # s.resource_bundles = {
-  #   'ARAlertViewController' => ['ARAlertViewController/Assets/*.png']
+  #  'ARAlertViewController' => ['Pod/**/*.xib']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+ 
+
 end

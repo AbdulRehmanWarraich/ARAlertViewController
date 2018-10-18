@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,39 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdJ-5H-Kzb">
+                                <rect key="frame" x="104.5" y="248.5" width="166" height="30"/>
+                                <state key="normal" title="Show Default Error Alert"/>
+                                <connections>
+                                    <action selector="showDefaultErrorAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rhI-30-Bsy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmf-DP-VHy">
+                                <rect key="frame" x="120" y="388.5" width="135" height="30"/>
+                                <state key="normal" title="Show success Alert"/>
+                                <connections>
+                                    <action selector="showSuccessAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="F64-wk-lU9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRw-cu-pOZ">
+                                <rect key="frame" x="102.5" y="318.5" width="170" height="30"/>
+                                <state key="normal" title="Show Custom Error Alert"/>
+                                <connections>
+                                    <action selector="showCustomErrorAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="49R-EY-QWE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jRw-cu-pOZ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="3Mm-DM-kKt"/>
+                            <constraint firstItem="cdJ-5H-Kzb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6Yh-t6-1rT"/>
+                            <constraint firstItem="Zmf-DP-VHy" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="AAr-gf-T7d"/>
+                            <constraint firstItem="jRw-cu-pOZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="CHp-Kf-y3q"/>
+                            <constraint firstItem="jRw-cu-pOZ" firstAttribute="top" secondItem="cdJ-5H-Kzb" secondAttribute="bottom" constant="40" id="di7-pm-tMB"/>
+                            <constraint firstItem="Zmf-DP-VHy" firstAttribute="top" secondItem="jRw-cu-pOZ" secondAttribute="bottom" constant="40" id="e94-kv-Dhl"/>
+                            <constraint firstItem="cdJ-5H-Kzb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jaL-RK-3ZL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

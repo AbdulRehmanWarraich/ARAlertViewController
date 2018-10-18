@@ -22,7 +22,7 @@ pod 'ARAlertViewController'
 
 ## Author
 
-ar.warraich@outlook.com, abdul.rehman@evampsaanga.com
+AbdulRehman  Warraich, ar.warraich@outlook.com
 
 ## License
 
