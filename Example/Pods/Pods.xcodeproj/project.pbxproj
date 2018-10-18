@@ -12,8 +12,8 @@
 		33847C48524CAAD37F8B7BE556659D8D /* Pods-ARAlertViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8022A5E127DE8CDA9AA5D6699C1B2CD5 /* Pods-ARAlertViewController_Tests-dummy.m */; };
 		4FD28CFB721B1106AEBFD637A11FC957 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		8CBA55EC2178759300AD77C6 /* UIViewController+AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA55EB2178759300AD77C6 /* UIViewController+AR.swift */; };
-		8CBA55EE217880B400AD77C6 /* AlertMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA55ED217880B400AD77C6 /* AlertMessageVC.swift */; };
 		8CBA55F12178A68300AD77C6 /* ARConstaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA55F02178A68300AD77C6 /* ARConstaints.swift */; };
+		8CBA55F52178B27800AD77C6 /* AlertMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA55F42178B27800AD77C6 /* AlertMessageVC.swift */; };
 		B61B29C973A6CB8C279D104AFE387DFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		BCC4AA1848F4A0AC7BA12948D509E9F5 /* Pods-ARAlertViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5DAAA574E6A9E0FAF7408E004AB6FD5 /* Pods-ARAlertViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E22A8044A3AF31F469C74F69D26541D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -57,8 +57,8 @@
 		8236CE147CBD15989C951700A9F4EE67 /* ARAlertViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARAlertViewController.xcconfig; sourceTree = "<group>"; };
 		88A70645978BB0B1942EC8D9D99143EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CBA55EB2178759300AD77C6 /* UIViewController+AR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+AR.swift"; path = "ARAlertViewController/Classes/UIViewController+AR.swift"; sourceTree = "<group>"; };
-		8CBA55ED217880B400AD77C6 /* AlertMessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessageVC.swift; sourceTree = "<group>"; };
 		8CBA55F02178A68300AD77C6 /* ARConstaints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARConstaints.swift; path = ARAlertViewController/Classes/ARConstaints.swift; sourceTree = "<group>"; };
+		8CBA55F42178B27800AD77C6 /* AlertMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertMessageVC.swift; path = ARAlertViewController/Classes/AlertMessageVC.swift; sourceTree = "<group>"; };
 		8FA7B28FBF86E6B46AD8F655ACCEFD60 /* ARAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARAlertViewController-dummy.m"; sourceTree = "<group>"; };
 		8FD57B48392DDB97C8DAE277C67BB41B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -218,8 +218,8 @@
 				7437E2AFAC4620CE52E713D3C3D6A2D9 /* Pod */,
 				13BBBBED954E644E9274C28D120743BB /* Support Files */,
 				8CBA55EB2178759300AD77C6 /* UIViewController+AR.swift */,
-				8CBA55ED217880B400AD77C6 /* AlertMessageVC.swift */,
 				8CBA55F02178A68300AD77C6 /* ARConstaints.swift */,
+				8CBA55F42178B27800AD77C6 /* AlertMessageVC.swift */,
 			);
 			name = ARAlertViewController;
 			path = ../..;
@@ -363,7 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F8080BF22ABEB3D0570A74B5710B3D /* ARAlertViewController-dummy.m in Sources */,
-				8CBA55EE217880B400AD77C6 /* AlertMessageVC.swift in Sources */,
+				8CBA55F52178B27800AD77C6 /* AlertMessageVC.swift in Sources */,
 				8CBA55F12178A68300AD77C6 /* ARConstaints.swift in Sources */,
 				8CBA55EC2178759300AD77C6 /* UIViewController+AR.swift in Sources */,
 			);

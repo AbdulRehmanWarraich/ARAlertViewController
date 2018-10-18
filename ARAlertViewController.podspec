@@ -18,20 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-ARAlertViewController is a basic wrapper for UIAlertViewController written in Swift. This help you to show alert messages and custom alert with ease and vert little effort and easy to manage.
+'ARAlertViewController is a basic wrapper for UIAlertViewController written in Swift. This help you to show alert messages and custom alert with ease and vert little effort and easy to manage.'
                        DESC
 
-  s.homepage         = 'https://github.com/AbdulRehmanWarraich'
+  s.homepage         = 'https://github.com/AbdulRehmanWarraich/ARAlertViewController.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'AbdulRehman Warraich' => 'ar.warraich@outlook.com' }
   s.source           = { :git => 'https://github.com/AbdulRehmanWarraich/ARAlertViewController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-  s.swift_version = '4.2'
+  s.ios.deployment_target = '9.0'
+  
 
   s.source_files = 'ARAlertViewController/Classes/**/*'
+  s.swift_version = '4.2'
   
   # s.resources = "ARAlertViewController/*.xib"
   # s.resource_bundles = {

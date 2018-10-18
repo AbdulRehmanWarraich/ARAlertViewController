@@ -37,7 +37,7 @@ class AlertMessageVC: UIViewController {
         detailView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         detailView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         detailView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100).isActive = true
-
+        
         /* Setting top title label and add in detail view */
         detailView.addSubview(alertTitleLabel)
         alertTitleLabel.textColor = UIColor.black
