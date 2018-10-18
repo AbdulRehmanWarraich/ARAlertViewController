@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ARAlertViewController_Example' do
+  pod 'ARAlertViewController', :path => '../'
+
+  target 'ARAlertViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
