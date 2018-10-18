@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlertMessageVC: UIViewController {
+open class AlertMessageVC: UIViewController {
     
     //MARK : - Properties
     fileprivate var cancelButtonCompletionBlock : ARConstaints.ARButtonCompletionHandler = {}
@@ -22,7 +22,7 @@ class AlertMessageVC: UIViewController {
     var alertMessageLabel :UILabel = UILabel()
     var cancelButton :UIButton = UIButton()
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.darkGray.withAlphaComponent(0.5)
@@ -83,7 +83,7 @@ class AlertMessageVC: UIViewController {
         view.layoutIfNeeded()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         detailView.layer.cornerRadius = 6.0
