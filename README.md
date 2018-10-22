@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/ARAlertViewController.svg?style=flat)](https://cocoapods.org/pods/ARAlertViewController)
 [![Platform](https://img.shields.io/cocoapods/p/ARAlertViewController.svg?style=flat)](https://cocoapods.org/pods/ARAlertViewController)
 
-<img src="https://imgur.com/JShzHmL.png" width="500" height="877" />
+<img src="https://imgur.com/7OKMmH2" width="500" height="545" />
 
 ## Requirements
 
