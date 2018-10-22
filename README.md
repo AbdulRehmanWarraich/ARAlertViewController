@@ -5,11 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/ARAlertViewController.svg?style=flat)](https://cocoapods.org/pods/ARAlertViewController)
 [![Platform](https://img.shields.io/cocoapods/p/ARAlertViewController.svg?style=flat)](https://cocoapods.org/pods/ARAlertViewController)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- iOS 9.0
+- Xcode 10.0+
+- Swift 4.2+
 
 ## Installation
 
@@ -19,6 +20,67 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ARAlertViewController'
 ```
+after adding 'ARAlertViewController' in your podfile run following command:
+
+```ruby
+pod install
+```
+## Usage 
+
+### Import
+
+```swift
+import ARAlertViewController
+```
+Then Go to your viewController and call as following:
+to show default alert `without completion block`
+
+```swift
+self.showAlert(title: "Alert", message: "Add a message you want to show", btnTitle: "OK", alertType: .defaultAlert)
+```
+
+ `with completion block`
+ 
+ ```swift
+ self.showAlert(title: "Alert", message: "Add a message you want to show", btnTitle: "OK", alertType: .defaultAlert) {
+ print("User clicked on ok button")
+ }
+ ```
+ 
+ to show Custom alert `without completion block`
+ 
+ ```swift
+ self.showAlert(title: "Alert", message: "Add a message you want to show", btnTitle: "OK", alertType: .customAlert)
+ ```
+ 
+ `with completion block`
+ 
+ ```swift
+ self.showAlert(title: "Alert", message: "Add a message you want to show", btnTitle: "OK", alertType: .customAlert) {
+ print("User clicked on ok button")
+ }
+ ```
+ 
+there are other helpper function avalible to show alert for `Error` and `Success` 
+
+to show `Error`
+
+```swift
+self.showErrorAlertWithMessage(message: "add error message here", alertType: .customAlert) {
+print("User clicked on Default Error ok button")
+}
+```
+
+and to show `Success`
+```swift
+self.showErrorAlertWithMessage(message: "add error message here", alertType: .customAlert) {
+print("User clicked on Default Error ok button")
+}
+
+self.showSuccessAlertWithMessage(message: "Add you Success message there", alertType: .customAlert) {
+print("User clicked on success ok button")
+}
+```
 
 ## Author
 
@@ -26,4 +88,4 @@ AbdulRehman  Warraich, ar.warraich@outlook.com
 
 ## License
 
-ARAlertViewController is available under the MIT license. See the LICENSE file for more info.
+ARAlertViewController is released under the MIT license. [See LICENSE](https://github.com/AbdulRehmanWarraich/ARAlertViewController/blob/master/LICENSE) for details.

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ARAlertViewController'
-  s.version          = '1.0'
+  s.version          = '1.0.1'
   s.summary          = 'ARAlertViewController is a refactoring library for UIAlertViewController which allow you to user alert with ease.'
 
 # This description is used to generate tags and improve search results.
