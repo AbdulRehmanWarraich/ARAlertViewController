@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ARAlertViewController'
 ```
-after adding 'ARAlertViewController' in your podfile run following command:
+Then, run the following command:
 
 ```ruby
 pod install
@@ -32,7 +32,9 @@ pod install
 ```swift
 import ARAlertViewController
 ```
+### Initialization
 Then Go to your viewController and call as following:
+
 to show default alert `without completion block`
 
 ```swift
@@ -43,7 +45,7 @@ self.showAlert(title: "Alert", message: "Add a message you want to show", btnTit
  
  ```swift
  self.showAlert(title: "Alert", message: "Add a message you want to show", btnTitle: "OK", alertType: .defaultAlert) {
- print("User clicked on ok button")
+    print("User clicked on ok button")
  }
  ```
  
@@ -57,7 +59,7 @@ self.showAlert(title: "Alert", message: "Add a message you want to show", btnTit
  
  ```swift
  self.showAlert(title: "Alert", message: "Add a message you want to show", btnTitle: "OK", alertType: .customAlert) {
- print("User clicked on ok button")
+    print("User clicked on ok button")
  }
  ```
  
@@ -67,18 +69,14 @@ to show `Error`
 
 ```swift
 self.showErrorAlertWithMessage(message: "add error message here", alertType: .customAlert) {
-print("User clicked on Default Error ok button")
+    print("User clicked on Default Error ok button")
 }
 ```
 
 and to show `Success`
 ```swift
-self.showErrorAlertWithMessage(message: "add error message here", alertType: .customAlert) {
-print("User clicked on Default Error ok button")
-}
-
 self.showSuccessAlertWithMessage(message: "Add you Success message there", alertType: .customAlert) {
-print("User clicked on success ok button")
+    print("User clicked on success ok button")
 }
 ```
 
