@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ARAlertViewController'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'ARAlertViewController is a refactoring library for UIAlertViewController which allow you to user alert with ease.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   
 
   s.source_files = 'ARAlertViewController/Classes/**/*'
-  s.swift_version = '4.2'
+  s.swift_version = '5'
   
   # s.resources = "ARAlertViewController/*.xib"
   # s.resource_bundles = {
